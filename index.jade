@@ -6,3 +6,10 @@ section.map
         .carousel-caption
           .container
             h1.pull-left Triad Startups
+
+section.posts
+  .container
+    .row
+      each post, slug in public.data
+        article.item.col-sm-6
+          != partial("/posts/" + slug, post)

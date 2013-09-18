@@ -1,0 +1,6 @@
+section.blog
+  .container
+    .row
+      .col-sm-12
+        each post, slug in public.blog.data
+          != partial("../posts/" + slug, post)
